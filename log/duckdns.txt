@@ -1,0 +1,43 @@
+PS C:\Users\sktlrkan> curl.exe -vI https://aekdtlsdmfdnlgkdu.duckdns.org/
+* Host aekdtlsdmfdnlgkdu.duckdns.org:443 was resolved.
+* IPv6: (none)
+* IPv4: 13.54.93.162
+*   Trying 13.54.93.162:443...
+* schannel: disabled automatic use of client certificate
+* ALPN: curl offers http/1.1
+* ALPN: server accepted http/1.1
+* Established connection to aekdtlsdmfdnlgkdu.duckdns.org (13.54.93.162 port 443) from 192.168.83.18 port 61891
+* using HTTP/1.x
+> HEAD / HTTP/1.1
+> Host: aekdtlsdmfdnlgkdu.duckdns.org
+> User-Agent: curl/8.21.0
+> Accept: */*
+>
+* Request completely sent off
+* schannel: remote party requests renegotiation
+* schannel: renegotiating SSL/TLS connection
+* schannel: SSL/TLS connection renegotiated
+* schannel: remote party requests renegotiation
+* schannel: renegotiating SSL/TLS connection
+* schannel: SSL/TLS connection renegotiated
+< HTTP/1.1 200 OK
+HTTP/1.1 200 OK
+< Server: nginx/1.28.3 (Ubuntu)
+Server: nginx/1.28.3 (Ubuntu)
+< Date: Sat, 12 Sep 2026 10:14:28 GMT
+Date: Sat, 12 Sep 2026 10:14:28 GMT
+< Content-Type: text/html
+Content-Type: text/html
+< Content-Length: 615
+Content-Length: 615
+< Last-Modified: Sat, 12 Sep 2026 09:55:11 GMT
+Last-Modified: Sat, 12 Sep 2026 09:55:11 GMT
+< Connection: keep-alive
+Connection: keep-alive
+< ETag: "6aa5217f-267"
+ETag: "6aa5217f-267"
+< Accept-Ranges: bytes
+Accept-Ranges: bytes
+<
+
+* Connection #0 to host aekdtlsdmfdnlgkdu.duckdns.org:443 left intact

@@ -1,0 +1,292 @@
+PS C:\Users\sktlrkan> curl.exe -I http://13.54.93.162
+HTTP/1.1 403 Forbidden
+Server: nginx/1.28.3 (Ubuntu)
+Date: Sat, 12 Sep 2026 10:29:10 GMT
+Content-Type: text/html
+Content-Length: 162
+Connection: keep-alive
+
+PS C:\Users\sktlrkan>
+
+
+ubuntu@ip-10-0-1-137:/var/www/html$ sudo tail -n 20 /var/log/nginx/error.log
+2026/09/12 10:13:03 [error] 2300#2300: *59 open() "/var/www/html/api" failed (2: No such file or directory), client: 157.245.36.108, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "POST /api HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+2026/09/12 10:13:04 [error] 2300#2300: *61 open() "/var/www/html/api/graphql" failed (2: No such file or directory), client: 157.245.36.108, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "POST /api/graphql HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+2026/09/12 10:13:05 [error] 2300#2300: *64 open() "/var/www/html/graphql/api" failed (2: No such file or directory), client: 157.245.36.108, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "POST /graphql/api HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+2026/09/12 10:13:06 [error] 2300#2300: *65 open() "/var/www/html/api/gql" failed (2: No such file or directory), client: 157.245.36.108, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "POST /api/gql HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+2026/09/12 10:13:07 [error] 2300#2300: *67 open() "/var/www/html/s/236313e23393e24353e23313/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties" failed (2: No such file or directory), client: 157.245.36.108, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "GET /s/236313e23393e24353e23313/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+2026/09/12 10:13:08 [error] 2300#2300: *68 open() "/var/www/html/config.json" failed (2: No such file or directory), client: 157.245.36.108, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "GET /config.json HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+2026/09/12 10:13:10 [error] 2300#2300: *72 open() "/var/www/html/telescope/requests" failed (2: No such file or directory), client: 157.245.36.108, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "GET /telescope/requests HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+2026/09/12 10:13:11 [error] 2300#2300: *74 open() "/var/www/html/info.php" failed (2: No such file or directory), client: 157.245.36.108, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "GET /info.php HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+2026/09/12 10:13:12 [error] 2300#2300: *76 open() "/var/www/html/.well-known/security.txt" failed (2: No such file or directory), client: 157.245.36.108, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "GET /.well-known/security.txt HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+2026/09/12 10:13:13 [error] 2300#2300: *78 open() "/var/www/html/actuator/env" failed (2: No such file or directory), client: 157.245.36.108, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "GET /actuator/env HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+2026/09/12 10:13:14 [error] 2300#2300: *80 open() "/var/www/html/trace.axd" failed (2: No such file or directory), client: 157.245.36.108, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "GET /trace.axd HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+2026/09/12 10:13:15 [error] 2301#2301: *82 open() "/var/www/html/@vite/env" failed (2: No such file or directory), client: 157.245.36.108, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "GET /@vite/env HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+2026/09/12 10:13:16 [error] 2301#2301: *84 open() "/var/www/html/.vscode/sftp.json" failed (2: No such file or directory), client: 157.245.36.108, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "GET /.vscode/sftp.json HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+2026/09/12 10:13:19 [error] 2301#2301: *88 open() "/var/www/html/debug/default/view" failed (2: No such file or directory), client: 157.245.36.108, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "GET /debug/default/view?panel=config HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+2026/09/12 10:17:22 [error] 2301#2301: *94 open() "/var/www/html/robots.txt" failed (2: No such file or directory), client: 159.69.72.167, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "GET /robots.txt HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+2026/09/12 10:27:41 [error] 3563#3563: *3 open() "/var/www/html/index.nginx-debian.html" failed (13: Permission denied), client: 183.98.213.100, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "GET / HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+2026/09/12 10:29:10 [error] 3563#3563: *5 open() "/var/www/html/index.nginx-debian.html" failed (13: Permission denied), client: 183.98.213.100, server: _, request: "HEAD / HTTP/1.1", host: "13.54.93.162"
+2026/09/12 10:33:08 [error] 3562#3562: *6 open() "/var/www/html/robots.txt" failed (2: No such file or directory), client: 74.7.244.34, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "GET /robots.txt HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+2026/09/12 10:33:09 [error] 3562#3562: *7 open() "/var/www/html/index.nginx-debian.html" failed (13: Permission denied), client: 74.7.243.242, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "GET / HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+2026/09/12 10:35:08 [error] 3562#3562: *8 open() "/var/www/html/index.nginx-debian.html" failed (13: Permission denied), client: 144.91.96.31, server: aekdtlsdmfdnlgkdu.duckdns.org, request: "GET / HTTP/1.1", host: "aekdtlsdmfdnlgkdu.duckdns.org"
+
+
+ubuntu@ip-10-0-1-137:/var/www/html$ ps aux | grep nginx
+root        3561  0.0  0.2  25344  2736 ?        Ss   10:24   0:00 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+www-data    3562  0.0  1.0  27128  9980 ?        S    10:24   0:00 nginx: worker process
+www-data    3563  0.0  1.0  27128  9960 ?        S    10:24   0:00 nginx: worker process
+ubuntu      3603  0.0  0.2   7144  2316 pts/0    S+   10:41   0:00 grep --color=auto nginx
+
+
+
+ubuntu@ip-10-0-1-137:/var/www/html$ namei -l /var/www/html/index.nginx-debian.html
+f: /var/www/html/index.nginx-debian.html
+drwxr-xr-x root root /
+drwxr-xr-x root root var
+drwxr-xr-x root root www
+drwxr-xr-x root root html
+-rw------- root root index.nginx-debian.html
+
+
+
+ubuntu@ip-10-0-1-137:/var/www/html$ sudo aa-status
+dmesg | grep -i apparmor
+apparmor module is loaded.
+183 profiles are loaded.
+105 profiles are in enforce mode.
+   /snap/snapd/26865/usr/lib/snapd/snap-confine
+   /usr/bin/man
+   /usr/lib/snapd/snap-confine
+   /usr/sbin/chronyd
+   alsamixer
+   babeld
+   bfdd
+   bgpd
+   bwrap
+   dig
+   dnstracer
+   docker-default
+   eigrpd
+   fabricd
+   fusermount3
+   gs
+   hostname
+   iotop-c
+   ipa_verify
+   irssi
+   isisd
+   john
+   ldpd
+   linux-boot-prober
+   locale
+   locale//compressor
+   lsb_release
+   lsblk
+   lsusb
+   man_filter
+   man_groff
+   mbsync
+   mosquitto
+   nc.openbsd
+   nhrpd
+   notify-send
+   nslookup
+   nvidia_modprobe
+   nvidia_modprobe//kmod
+   os-prober
+   ospf6d
+   ospfd
+   pathd
+   pbrd
+   pim6d
+   pimd
+   plasmashell
+   plasmashell//QtWebEngineProcess
+   pollinate
+   proftpd
+   qpdf
+   ripd
+   ripngd
+   rsyslogd
+   sbuild
+   sbuild-abort
+   sbuild-adduser
+   sbuild-apt
+   sbuild-checkpackages
+   sbuild-clean
+   sbuild-createchroot
+   sbuild-destroychroot
+   sbuild-distupgrade
+   sbuild-hold
+   sbuild-shell
+   sbuild-unhold
+   sbuild-update
+   sbuild-upgrade
+   snap-update-ns.amazon-ssm-agent
+   ssh-keyscan
+   staticd
+   systemd-detect-virt
+   tcpdump
+   tinyproxy
+   tnftp
+   tnftp//cmds
+   tnftp//dash
+   tnftp//dash//more
+   transmission-cli
+   transmission-daemon
+   transmission-gtk
+   transmission-qt
+   tshark
+   tshark//dumpcap
+   ubuntu_pro_apt_news
+   ubuntu_pro_esm_cache
+   ubuntu_pro_esm_cache//apt_methods
+   ubuntu_pro_esm_cache//apt_methods_gpgv
+   ubuntu_pro_esm_cache//cloud_id
+   ubuntu_pro_esm_cache//dpkg
+   ubuntu_pro_esm_cache//ps
+   ubuntu_pro_esm_cache//ubuntu_distro_info
+   ubuntu_pro_esm_cache_systemctl
+   ubuntu_pro_esm_cache_systemd_detect_virt
+   unix-chkpwd
+   unpriv_bwrap
+   unprivileged_userns
+   vrrpd
+   wg
+   wg-quick
+   wg-quick//ip
+   wg-quick//nft
+   wg-quick//sysctl
+   who
+   znc
+4 profiles are in complain mode.
+   Xorg
+   Xorg_wrap
+   snap.amazon-ssm-agent.amazon-ssm-agent
+   snap.amazon-ssm-agent.ssm-cli
+0 profiles are in prompt mode.
+0 profiles are in kill mode.
+74 profiles are in unconfined mode.
+   1password
+   Discord
+   MongoDB Compass
+   QtWebEngineProcess
+   balena-etcher
+   brave
+   buildah
+   cam
+   ch-checkns
+   ch-run
+   chrome
+   chromium
+   crun
+   devhelp
+   element-desktop
+   epiphany
+   evolution
+   firefox
+   flatpak
+   foliate
+   geary
+   github-desktop
+   goldendict
+   kchmviewer
+   keybase
+   lc-compliance
+   libcamerify
+   linux-sandbox
+   loupe
+   lxc-attach
+   lxc-create
+   lxc-destroy
+   lxc-execute
+   lxc-stop
+   lxc-unshare
+   lxc-usernsexec
+   mmdebstrap
+   msedge
+   notepadqq
+   obsidian
+   opam
+   opera
+   pageedit
+   podman
+   polypane
+   privacybrowser
+   qcam
+   qmapshack
+   qutebrowser
+   rootlesskit
+   rpm
+   rssguard
+   runc
+   scide
+   signal-desktop
+   slack
+   slirp4netns
+   steam
+   stress-ng
+   surfshark
+   systemd-coredump
+   thunderbird
+   trinity
+   tup
+   tuxedo-control-center
+   userbindmount
+   uwsgi-core
+   vdens
+   virtiofsd
+   vivaldi-bin
+   vpnns
+   vscode
+   wike
+   wpcom
+4 processes have profiles defined.
+3 processes are in enforce mode.
+   /usr/sbin/chronyd (733)
+   /usr/sbin/chronyd (739)
+   /usr/sbin/rsyslogd (809) rsyslogd
+1 processes are in complain mode.
+   /snap/amazon-ssm-agent/13009/amazon-ssm-agent (1072) snap.amazon-ssm-agent.amazon-ssm-agent
+0 processes are in prompt mode.
+0 processes are in kill mode.
+0 processes are unconfined but have a profile defined.
+0 processes are in mixed mode.
+dmesg: read kernel buffer failed: Operation not permitted
+
+
+
+
+ubuntu@ip-10-0-1-137:/var/www/html$ sudo chmod 755 /var/www /var/www/html
+ubuntu@ip-10-0-1-137:/var/www/html$ sudo chmod 644 /var/www/html/*
+ubuntu@ip-10-0-1-137:/var/www/html$ sudo chown -R www-data:www-data /var/www/html
+ubuntu@ip-10-0-1-137:/var/www/html$ namei -l /var/www/html/index.nginx-debian.html
+f: /var/www/html/index.nginx-debian.html
+drwxr-xr-x root     root     /
+drwxr-xr-x root     root     var
+drwxr-xr-x root     root     www
+drwxr-xr-x www-data www-data html
+-rw-r--r-- www-data www-data index.nginx-debian.html
+
+
+PS C:\Users\sktlrkan> curl.exe -I http://13.54.93.162
+HTTP/1.1 200 OK
+Server: nginx/1.28.3 (Ubuntu)
+Date: Sat, 12 Sep 2026 10:46:23 GMT
+Content-Type: text/html
+Content-Length: 615
+Last-Modified: Sat, 12 Sep 2026 09:55:11 GMT
+Connection: keep-alive
+ETag: "6aa5217f-267"
+Accept-Ranges: bytes
+
+PS C:\Users\sktlrkan>
+
+
+ubuntu@ip-10-0-1-137:/var/www/html$ sudo tail -n 5 /var/log/nginx/access.log
+74.7.243.242 - - [12/Sep/2026:10:33:09 +0000] "GET / HTTP/1.1" 403 134 "-" "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.4; +https://openai.com/gptbot)"
+144.91.96.31 - - [12/Sep/2026:10:35:08 +0000] "GET / HTTP/1.1" 403 196 "-" "Mozilla/5.0 (Fedora; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+104.28.224.94 - - [12/Sep/2026:10:44:00 +0000] "GET / HTTP/1.1" 403 196 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+183.98.213.100 - - [12/Sep/2026:10:46:23 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/8.21.0"
+183.98.213.100 - - [12/Sep/2026:10:46:35 +0000] "GET / HTTP/1.1" 200 409 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36 Edg/153.0.0.0"

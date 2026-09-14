@@ -1,0 +1,4 @@
+ubuntu@ip-10-0-1-137:/var/www/html$ docker ps
+CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                                 NAMES
+e22b10653d17   nginx:alpine   "/docker-entrypoint.…"   5 seconds ago   Up 5 seconds   0.0.0.0:80->80/tcp, [::]:80->80/tcp   my-web
+ubuntu@ip-10-0-1-137:/var/www/html$
